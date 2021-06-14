@@ -3,11 +3,14 @@ mod = int(input("Enter Modulus(should be PRIME NUMBER): "))
 secret_keyA = int(input("Enter Alice secret key: "))
 secret_keyB = int(input("Enter Bob secret key: "))
 
+
 aliceNum = base ** secret_keyA % mod
 bobNum = base ** secret_keyB % mod
 
+
 shared_keyA = bobNum ** secret_keyA % mod
 shared_keyB = aliceNum ** secret_keyB % mod
+
 
 print("The shared key of Alice is: ",shared_keyA ," The shared key of Bob is: ",shared_keyB)
 print("Bobs decryption key: ", aliceNum)
