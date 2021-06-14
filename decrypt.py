@@ -4,6 +4,7 @@ secret_keyB = int(input("Enter Bob secret key: "))
 decryptionKey = int(input("Enter your decryption key: "))
 shared_keyB = decryptionKey ** secret_keyB % mod
 
+
 def xor_decrypt(shared_key):
     import os.path
     filename = input("Enter the Filename you want to decrypt: ")
