@@ -1,6 +1,3 @@
-#Chrizza Mae Ecal
-#BSCS3-B
-
 from Crypto.Util.number import getPrime
 from random import randrange
 from math import gcd
